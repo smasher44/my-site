@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins",sans-serif;
+  line-height: 1;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.sections-header {
+  text-align: center;
+  font-size:25px;
+  font-weight: 600;
+}
+
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/Poppins-Thin.woff2") format('woff2'),
+  url("./fonts/Poppins/Poppins-Light.woff2") format('woff2'),
+  url("./fonts/Poppins/Poppins-Medium.woff2") format('woff2'),
+  url("./fonts/Poppins/Poppins-Regular.woff2") format('woff2'),
+  url("./fonts/Poppins/Poppins-ExtraLight.woff2") format('woff2');
+  font-style: normal;
+}
+
+.container {
+  display: grid;
+  background-image: url(./dots.png);
+  background-size: contain;
+  background-color: #171941 ;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 100vh 150vh 350px 80vh 70vh 40px;
+}
+
+
+/*PROFILE INFORMATION */
+.nav-container {
+  /* visibility: hidden; */
+  grid-column: 1/2; 
+  grid-row: 1/-1; 
+  height: 70vh;
+  width: 270px;
+  /* border:1px solid #1d8cf8; */
+  display: flex;
+  flex-direction: column;
+  padding: 23px 18px;
+  line-height: 1.2;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  /* position: fixed; */
+  z-index: 50;
+  
+}
+
+.profile-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:5px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600 ;
+  margin-top: 20px;
+}
+
+.profile-pic {
+  background-image: url(./gradpic.jpg);
+  background-size: cover;
+  border-radius: 100%;
+  height: 120px;
+  width: 120px;
+}
+
+.profile-description {
+  padding: 5px 7.7px;
+  font-size: 13.8px;
+}
+
+.profile-nav{
+  /* background-color:#1f2251; */
+  list-style: none;
+}
+
+.profile-nav-list {
+  padding: 5px 30px; 
+  margin: 10px 10px;
+  font-size: 15px;
+}
+.profile-nav-list:first-child {
+  padding-top: 5px; 
+  margin-top: 14px;
+}
+
+.profile-nav-list:hover {
+  cursor: pointer;
+  color: #70b5fa;
+  transition: color 0.3s ease-in-out, 
+      border-color 0.3s ease-in-out, 
+      background-color 0.3s ease-in-out;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  padding-top: 5px;
+  margin-left: 57px;
+}
+
+ion-icon {
+  color: rgb(184, 184, 184);
+}
+
+.social-icon {
+  height: 24px;
+  width: 24px;
+}
+
+
+
+/* HERO AND DASHBOARDS */
+.hero {
+  position: relative;
+  grid-column: 2/-1;
+  /* border:1px solid #1d8cf8; */
+  /* overflow: hidden; */
+}
+
+.hero__intro {
+  display: flex;
+  height: 75vh;
+}
+
+.hero__dashboard {
+  height: 25vh;
+}
+
+.header--container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 119px ;
+  width: 60%;
+  margin-left: 40px;
+  z-index: 3;
+  
+}
+
+.header {
+  font-size:34.3px;
+  display: block;
+  padding: 10px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.description {
+  display: block;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 1.1px;
+  line-height: 1.2;
+  color: rgb(255, 254, 254);
+  padding: 10px;
+}
+
+.btn--container {
+  display: flex;
+  margin-top: 40px;
+  gap: 16px;
+}
+
+.btn:link, .btn:visited {
+  font-size: 14px;
+  padding: 11px 23px;
+  border-radius: 100px;
+  border:1px solid #1d8cf8;
+  text-decoration: none;
+  color: #1d8cf8;
+}
+
+.header--image {
+  position: relative;
+  /* background-color: tomato; */
+}
+
+.header--image-photo {
+  position: absolute;
+  top: 50%;
+  transform: translate(25%,-60%);
+  border-radius: 300px;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(29, 139, 248, 0.74);
+}
+
+.square {
+  position: absolute;
+  
+  z-index: 1;
+  transition: 0.5s ease-out;
+  border-radius: 15%;
+  background: linear-gradient(0deg, #3358f4 0%, #1d8cf8 100%);
+  transition: 0.5s ease-out;
+}
+
+.square-1 {
+  height: 280px;
+  width: 280px;
+  opacity: 0.5;
+  left: -4.6%;
+  top: -25%;
+  animation: shake 4s infinite;
+}
+
+.square-2 {
+  height: 350px;
+  width: 350px;
+  opacity: 0.4;
+  right: 4%;
+  top: -12%;
+  animation: shake 6s infinite;
+}
+
+.square-3 {
+  height: 180px;
+  width: 180px;
+  opacity: 0.4;
+  left: -12%;
+  bottom: 3.5%;
+  animation: shake 5s infinite;
+}
+
+.square-4 {
+  height: 100px;
+  width: 100px;
+  opacity: 0.9;
+  left: 22%;
+  top: 85%;
+  animation: shake 9s infinite;
+}
+
+.square-5 {
+  height: 230px;
+  width: 230px;
+  opacity: 0.1;
+  left: 35%;
+  bottom: 40%;
+  animation: shake 6s infinite;
+}
+
+.square-6 {
+  height: 80px;
+  width: 80px;
+  opacity: 0.8;
+  left: 10%;
+  top: 37%;
+  animation: shake 9s infinite;
+}
+
+.square-7 {
+  height: 270px;
+  width: 270px;
+  opacity: 0.1;
+  right: 1%;
+  bottom: 2%;
+  animation: shake 4s infinite;
+}
+
+
+@keyframes shake {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+/* dashboards */
+.hero__dashboard {
+  position: relative;
+  display: flex;
+  /* margin: 10px 10px ; */
+  justify-content: space-evenly;
+  /* border:1px solid #1d8cf8; */
+}
+
+.dashboard {
+  width: 336px;
+  height: 85px;
+  background-color: #1f2251;
+  /* border:1px solid #1d8cf8; */
+  z-index: 2;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  border-radius: 10px;
+  padding: 30px 25px;
+  margin-top: 40px;
+  position: absolute;
+  top:0;
+}
+
+.dashboard:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(29, 139, 248, 0.74);
+}
+.dashboard--title {
+  position: absolute;
+  top: 5%;
+  left: 35%;
+}
+
+.dashboard-offset-1 {
+  left: -10%;
+}
+.dashboard-offset-2 {
+  left: 25%;
+}
+
+.dashboard-offset-3 {
+  left: 60%;
+
+}
+
+/* Path Images  */
+
+/* PROJECTS */
+.projects {
+  position: relative;
+  /* border:1px solid #1d8cf8; */
+
+}
+
+.path-image-1 {
+  position: absolute;
+  background-image: url('./img/blob.png');
+  background-size: cover;
+  height: 800px;
+  width:800px;
+  top: 56%;
+  left: 40.7%;
+  opacity: 0.02;
+}
+
+.path-image-2 {
+  position: absolute;
+  background-image: url('./img/path4.png');
+  background-size: cover;
+  height: 300px;
+  width:300px;
+  top: 54%;
+  left: 0%;
+  opacity: 0.02;
+  transform: rotate(180deg)
+}
+
+.path-image-3 {
+  position: absolute;
+  background-image: url('./img/path4.png');
+  background-size: cover;
+  height: 400px;
+  width:400px;
+  top: 8.3%;
+  right: 2.4%;
+  opacity: 0.02;
+  transform: rotate(93deg)
+}
+
+
+
+
+
