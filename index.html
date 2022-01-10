@@ -15,43 +15,13 @@
 </head>
 <body>
   <div class="container">
-    <!-- navigation section -->
-    <div class="nav-container">
-     
-        <div class="profile-intro">
-          <p class="name">George Libatique</p>
-          <div class="profile-pic"></div>  
-          <span class="profile-description">Front-End Developer / Web designer / Electrical Engineer </span> 
-        </div>
-        <div class="social-icons"> 
-          <a href="#">
-            <ion-icon class="social-icon" name="logo-github"></ion-icon>
-          </a>
-          <a href="#">
-            <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
-          </a>
-          <a href="#">
-            <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
-          </a>
-        </div>
-
-        <ul class="profile-nav">
-            <li class="profile-nav-list">About Me</li>
-            <li class="profile-nav-list">My Resume</li>
-            <li class="profile-nav-list">Personal Blog</li>
-            <li class="profile-nav-list">Contact Me</li>
-        </ul>
-
-        
-    </div>
-
+       
     <!-- hero section -->
     <div class="hero">
-      <div class="hero__intro">
-
+      
         <div class="header--container">
           <h2 class="header">Discover my Creative Style in Frontend Web Development</h2>
-          <p class="description">I'm a software developer specialised in frontend development for complex scalable
+          <p class="description">I'm <span class="name">George Libatique</span> a software developer specialised in frontend development for complex scalable
             web apps. Want to know how I may help your project? Check out my portfolio and online resume.
           </p>
           <div class="btn--container">
@@ -60,8 +30,23 @@
           </div>
         </div>
 
-        <div class="header--image">
-          <img src="me.jpg" height="250px" width="260px" class="header--image-photo"/>
+        <div class="header--image-container">
+          <img src="gradpic.jpg" height="250px" width="260px" class="header--image-photo"/>
+          <div class="professional-title-container">
+            <span class="professional-title">Front-End Developer / Web designer</span>
+            <span class="professional-title">Electrical Engineer</span> 
+            <div class="social-icons">
+                <a href="#">
+                  <ion-icon class="social-icon" name="logo-github"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                </a>
+            </div>
+          </div>
         </div>
         <!-- floating squares -->
         <div class="square square-1"></div> 
@@ -71,19 +56,20 @@
         <div class="square square-5"></div> 
         <div class="square square-6"></div> 
         <div class="square square-7"></div> 
-      </div>
-      <div class="hero__dashboard">
-        <span class="dashboard--title">Dashboard</span>
-        <div class="dashboard dashboard-offset-1">Projects: 4 </div> 
-        <div class="dashboard dashboard-offset-2" >Completed: 3</div> 
-        <div class="dashboard dashboard-offset-3">Ongoing: 1</div> 
-      </div>
+     
     </div>
 
     <!-- project section -->
     <div class="projects"> 
       <div class="projects-header">
-        <h3 class="sections-header header-featured"> Featured Projects </h3>  
+        <h3 class="sections-header"> Featured Projects </h3>  
+      </div>  
+      <div class="projects-header">
+        <div class="hero__dashboard">
+         <div class="dashboard">Projects: 4 </div> 
+         <div class="dashboard">Completed: 3</div> 
+         <div class="dashboard">Ongoing: 1</div> 
+        </div>
       </div>  
       <div class="projects-header">
         <h3 class="subheader-featured"> Major Projects </h3>  

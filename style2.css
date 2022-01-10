@@ -1,9 +1,11 @@
 /* FEATURED PROJECTS */
 .projects {
+  position: relative;
+  /* border:1px solid #1d8cf8; */
   grid-column: 1/-1 ;
   grid-row: 2/3 ;
   display: grid;
-  grid-template-rows: 10vh 7vh 42vh 42vh 7vh 42vh;
+  grid-template-rows: 10vh 8vh 7vh 42vh 42vh 7vh 42vh;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -12,10 +14,6 @@
   padding: 10px;
   line-height: 1.2;
   letter-spacing: 1.1px;
-}
-
-.header-featured { /* Helper Class */
-  margin-top: 30px;
 }
 
 .project-header-section {
