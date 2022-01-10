@@ -11,14 +11,30 @@
 
 .projects-header {
   grid-column: 1/-1;
-  padding: 10px;
+  padding: 1rem;
   line-height: 1.2;
   letter-spacing: 1.1px;
 }
 
-.project-header-section {
-  font-size: 19px;
-  font-weight: inherit;
+/* dashboards */
+.projects__dashboard {
+  display: flex;
+  justify-content: space-evenly;
+  /* border:1px solid #1d8cf8; */
+}
+
+.dashboard {
+  width: 20rem;
+  height: 3rem;
+  text-align: center;
+  background-color: #1f2251;
+  /* border:1px solid #1d8cf8; */
+  z-index: 2;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: .11rem;
+  border-radius: 10rem;
+  padding: .5rem 1rem;
 }
 
 .project-container {
@@ -30,9 +46,9 @@
 
 .project-content {
   display: flex;
-  height: 200px;
-  width: 520px;
-  border-radius: 10px;
+  height: 20rem;
+  width: 52rem;
+  border-radius: 1rem;
   background-color: #1f2251;
   overflow: hidden;
   /* border:1px solid #1d8cf8; */
@@ -43,82 +59,80 @@
 .project-content:hover {
   cursor: pointer;
   transform: scale(1.02);
-  box-shadow: 0 0 10px rgba(29, 139, 248, 0.74);
+  box-shadow: 0 0 1rem rgba(29, 139, 248, 0.74);
   transition: all 0.2s linear;
 }
 
 .project-image {
-  height: 200px;
-  width: 200px;
+  height: 20rem;
+  width: 20rem;
   z-index: 50;
 }
 
 .project-description {
   display: flex;
   flex-direction: column;
-  /* justify-content: center;  */
   /* border:1px solid #1d8cf8; */
   transition: all 0.35s ease-in;
-  padding: 8px 5px;
-  width: 320px;
-  transform: translateY(30px);
+  padding: .8rem .5rem;
+  width: 32rem;
+  transform: translateY(3rem);
 } 
 
 .project-description-title {
   font-weight: 600;
-  font-size: 20px;
-  padding: 5px 5px;
+  font-size: 2rem;
+  padding: .5rem .5rem;
 }
 
 .project-description-definition {
-  padding: 5px 5px;
+  padding: .5rem .5rem;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 1.2;
-  letter-spacing: 0.8px;
+  letter-spacing: .08rem;
 }
 
 /* margin-overiding */
 .project-content-left {
-  margin-left: 50px;
+  margin-left: 5rem;
 }
 
 .project-content-right {
-  margin-right: 50px;
+  margin-right: 5rem;
 }
 
 .subheader-featured {
-  margin-left: 110px;
+  margin-left: 11rem;
+  font-size: 1.8rem;
 }
 
 .project-nav-btn {
   display: flex;
-  gap: 10px;
-  margin-top: 12px;
-  margin-left: 10px;
-  transform: translate(-220px, -20px);
-  /* transform: translateY(-20px); */
+  gap: 1.3rem;
+  margin-top: 1.2rem;
+  margin-left: 1rem;
+  transform: translate(-22rem, -2rem);
   transition: all 0.35s ease-in;
   opacity: 0;
 }
 
 .project-btn {
-  font-size: 14px;
-  padding: 8px 18px;
-  border-radius: 100px;
-  border:1px solid #1d8cf8;
+  font-size: 1.4rem;
+  padding: .8rem 1.2rem;
+  border-radius: 10rem;
+  border: .1rem solid #1d8cf8;
   color: #1d8cf8;
   background: transparent;
-  /* for animations */
 }
 
 .project-content:hover .project-nav-btn {
-  transform: translateX(2px);
+  transform: translateX(.2rem);
   opacity: 1;
 } 
 
 .project-content:hover .project-description {
-  transform: translateY(7px);
+  transform: translateY(.7rem);
   
 } 
 
@@ -148,12 +162,12 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin-left: 100px;
+  margin-left: 10rem;
   /* font styles */
-  font-size:14px;
+  font-size: 1.4rem;
   font-weight: 100;
   line-height: 1.2;
-  letter-spacing: 1.5px;
+  letter-spacing: .15rem;
 }
 
 .skills-backend-header {
@@ -167,7 +181,7 @@
   grid-column: 2/-1;
   grid-row: 3/4;
   /* border:1px solid #1d8cf8; */
-  margin-left: 40px;
+  margin-left: 4rem;
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
@@ -183,18 +197,18 @@
 .skill-set {
   display: flex;
   align-items: center;
-  padding: 4px 5px;
-  gap: 6.4px;
+  padding: .4rem .5rem;
+  gap: .64rem;
 /* font styles */
-  font-size:14px;
+  font-size: 1.4rem;
   font-weight: 100;
   line-height: 1.2;
-  letter-spacing: 1.5px;
+  letter-spacing: .15rem;
 }
 
 .logos-image {
-  height: 40px;
-  width: 40px;
+  height: 4rem;
+  width: 4rem;
 }
 
 
@@ -212,17 +226,17 @@
 
 .blog-title {
   position: absolute;
-  top: -32px;
-  left: 633px;
+  top: -3.2rem;
+  left: 63.3rem;
 }
 
 .blog-card {
   position: relative;
-  width: 303px;
-  height: 380px;
+  width: 30.3rem;
+  height: 38rem;
   /* border:1px solid #1d8cf8; */
-  margin-top: 30px;
-  border-radius: 10px;
+  margin-top: 3rem;
+  border-radius: 1rem;
   overflow: hidden;
   background-color:#1f2251 ;
   backface-visibility: hidden;
@@ -231,33 +245,33 @@
 
 .blog-card:hover {
   cursor: pointer;
-  transform: translateY(-6px) scale(1.01);
+  transform: translateY(-.6rem) scale(1.01);
   transition: all 0.2s linear;
 }
 
 .blog-card-image {
-  height: 200px;
-  width: 304px;
+  height: 20rem;
+  width: 30.4rem;
 }
 
 .btn-blog {
   position: absolute;
-  top: 436px;
-  left: 602px;
+  top: 43.6rem;
+  left: 60.2rem;
   backface-visibility: hidden;
 }
 
 .blog-card-content {
-  padding: 12px 8px;
+  padding: 1.2rem .8rem;
 }
 
 .blog-card-floater {
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #e7e7e7;
   position: absolute;
   opacity: 0;
-  top:50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   
@@ -271,7 +285,7 @@
 }
 
 .blog-card:hover  .blog-card-image {
-  filter: blur(3px) brightness(80%);
+  filter: blur(.3rem) brightness(80%);
 }
 
 .image-container {
@@ -279,28 +293,28 @@
 }
 
 .blog-card-date {
-  font-size:14px;
+  font-size: 1.4rem;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: .5rem;
 }
 
 .blog-card-title {
-  padding-top: 7px;
-  padding-bottom: 12px;
+  padding-top: .7rem;
+  padding-bottom: 1.2rem;
 }
 
 
 .blog-card-definition {
-  font-size:14px;
+  font-size: 1.4rem;
   line-height: 1.2;
   font-weight: 400;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.08rem;
 }
 
 /* bottom squares */
 .square-8 {
-  height: 180px;
-  width: 180px;
+  height: 18rem;
+  width: 18rem;
   opacity: 0.4;
   left: 4%;
   bottom: 88%;
@@ -308,8 +322,8 @@
 }
 
 .square-9 {
-  height: 100px;
-  width: 100px;
+  height: 10rem;
+  width: 10rem;
   opacity: 0.9;
   left: 3%;
   top: 70%;
@@ -317,8 +331,8 @@
 }
 
 .square-10 {
-  height: 230px;
-  width: 230px;
+  height: 23rem;
+  width: 23rem;
   opacity: 0.1;
   left: 33%;
   bottom: 42%;
@@ -326,14 +340,11 @@
 }
 
 .square-11 {
-  height: 270px;
-  width: 270px;
+  height: 27rem;
+  width: 27rem;
   opacity: 0.1;
   right: 1%;
   bottom: -10%;
   animation: shake 4s infinite;
 }
-
-
-
 
