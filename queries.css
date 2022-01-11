@@ -1,0 +1,108 @@
+/* rem and em do NOT depend on html font-size in media queries!
+Instead, 1rem = 1em = 16px */
+
+/*******************************/
+/* BELOW 1300px (Normal desktops) */
+/*******************************/
+@media (max-width: 81.25em) {
+  html {
+    font-size: 59.5%;
+  }
+}
+
+/*******************************/
+/* BELOW 1200px (Landscape Tablets) */
+/*******************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 54.9%;
+  }
+}
+
+/*******************************/
+/* BELOW 1150px (for transition purposes) */
+/*******************************/
+@media (max-width: 72em) {
+  html {
+    font-size: 52.8%;
+  }
+
+}
+
+/*******************************/
+/* BELOW 1050px (for transition purposes) */
+/*******************************/
+@media (max-width: 66em) {
+  html {
+    font-size: 53%;
+  }
+
+  .project-content-left {
+    margin-left: 3rem;
+  }
+  
+  .project-content-right {
+    margin-right: 3rem;
+  }
+
+}
+
+/*******************************/
+/* BELOW 1000px (Tablets) */
+/*******************************/
+@media (max-width: 63em) {
+  html {
+    font-size: 51%;
+  }
+
+  .btn-blog {
+   
+    bottom: 20%;
+    
+  }
+}
+
+
+/*******************************/
+/* BELOW 704px (Smaller tablets) */
+/*******************************/
+@media (max-width: 44em) {
+  html {
+    font-size: 51%;
+  }
+}
+
+/*******************************/
+/* BELOW 704px (Phones) */
+/*******************************/
+@media (max-width: 44em) {
+  html {
+    font-size: 37%;
+  }
+
+  .container {
+  grid-template-rows: 100vh 284vh 35rem 93vh 70vh 4rem;
+    max-width: 89.6rem;
+  }
+
+  .projects {
+    grid-template-rows: 100vh 284vh 35rem 240vh 70vh 4rem;
+    grid-template-columns: 1fr;
+  }
+
+  .blog {
+    flex-direction: column;
+  }
+  
+}
+
+/*******************************/
+/* BELOW 544px (Phones) */
+/*******************************/
+@media (max-width: 34em) {
+  html {
+    font-size: 51%;
+  }
+
+}
+
