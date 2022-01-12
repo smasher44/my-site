@@ -119,6 +119,18 @@
   backface-visibility: hidden; /* optional */
 }
 
+/*---for experimentation----*/
+.btn-project a {
+  padding: .9rem 0.1rem;
+  text-decoration: none;
+  color: #1d8cf8; 
+}
+
+.btn-project a:hover {
+  color: white;
+}
+/*------until here------*/
+
 .btn-project:link, .btn-project:visited {
   position: relative; /*IMPORTANT do not remove*/
 }
