@@ -44,17 +44,17 @@ body {
 
 @font-face {
   font-family: "Poppins";
-  src: url("./fonts/Poppins/Poppins-Thin.woff2") format('woff2'),
-  url("./fonts/Poppins/Poppins-Light.woff2") format('woff2'),
-  url("./fonts/Poppins/Poppins-Medium.woff2") format('woff2'),
-  url("./fonts/Poppins/Poppins-Regular.woff2") format('woff2'),
-  url("./fonts/Poppins/Poppins-ExtraLight.woff2") format('woff2');
+  src: url("../fonts/Poppins/Poppins-Thin.woff2") format('woff2'),
+  url("../fonts/Poppins/Poppins-Light.woff2") format('woff2'),
+  url("../fonts/Poppins/Poppins-Medium.woff2") format('woff2'),
+  url("../fonts/Poppins/Poppins-Regular.woff2") format('woff2'),
+  url("../fonts/Poppins/Poppins-ExtraLight.woff2") format('woff2');
   font-style: normal;
 }
 
 .container {
   display: grid;
-  background-image: url(./dots.png);
+  background-image: url(../img/dots.png);
   background-size: contain;
   background-color: #171941;
   grid-template-rows: 100vh 150vh 35rem 80vh 70vh 4rem;
@@ -310,7 +310,7 @@ a {
 /* Path Images  */
 .path-image-1 {
   position: absolute;
-  background-image: url('./img/blob.png');
+  background-image: url('../img/blob.png');
   background-size: cover;
   height: 80rem;
   width:80rem;
@@ -321,7 +321,7 @@ a {
 
 .path-image-2 {
   position: absolute;
-  background-image: url('./img/blob2.png');
+  background-image: url('../img/blob2.png');
   background-size: cover;
   height: 30rem;
   width:30rem;
@@ -333,7 +333,7 @@ a {
 
 .path-image-3 {
   position: absolute;
-  background-image: url('./img/blob2.png');
+  background-image: url('../img/blob2.png');
   background-size: cover;
   height: 40rem;
   width:40rem;

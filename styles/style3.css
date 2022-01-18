@@ -7,7 +7,7 @@
   background-image: linear-gradient(
     rgb(43, 53, 83, 0.88),
     rgb(43, 53, 83, 0.88)),
-     url(./blog_cta_images/cta.jpg);
+     url(../img/blog_images/cta.jpg);
   background-size: cover;
   z-index: 50;
 }
