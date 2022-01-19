@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./styles/style2.css">
   <link rel="stylesheet" href="./styles/style3.css">
   <link rel="stylesheet" href="./styles/queries.css">
+  <link rel="stylesheet" href="./styles/resume.css">
   <link rel="icon" type="image/png" href="./img/favicon.png">
   <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
@@ -18,16 +19,16 @@
   <div class="container">
        
     <!-- hero section -->
-    <div class="hero">
+    <div class="hero" id="hero">
       
       <div class="header--container">
         <h2 class="header">Discover my Creative Style in Frontend Web Development</h2>
-        <p class="description">I'm <span class="name">George Libatique</span> a software developer specialised in frontend development for complex scalable
+        <p class="description">I'm <span class="name">George Libatique</span> a web developer specialised in frontend development for complex scalable
           web apps. Want to know how I may help your project? Check out my portfolio and online resume.
         </p>
         <div class="btn--container">
-          <a href="#" class="btn btn-hero"> Hire me </a>
-          <a href="#" class="btn btn-hero"> View Resume </a>
+          <a href="#call_to_action" class="btn btn-hero"> Hire me </a>
+          <a href="#popup" class="btn btn-hero"> View Resume </a>
         </div>
       </div>
 
@@ -167,12 +168,13 @@
           <img src="img/landingpages/landing-page-4.jpg" class="project-image"/>
           <div class="project-description">
             <div class="project-description-title">
-              Music App Player
+              <div>CMS</div> 
+              <div style="font-size: 14px; margin-top: 5px;">(Content Management System)</div>
             </div>
             <div class="project-description-definition">
               The landing page is usually the space used by the company
-              to offer some valuable content, such as an e-book, in 
-              exchange for the consumer’s contact information.    
+              to offer some valuable content, such as an e-book. in 
+              exchange for the consumer.  
             </div>
             <div class="project-nav-btn">
               <button class="btn btn-project">
@@ -191,6 +193,7 @@
       <div class="project-container"> 
         <div class="project-content project-content-left">
           <img src="img/landingpages/landing-page-5.jpg" class="project-image"/> 
+          <!-- <div class="project-image"></div> -->
           <div class="project-description">
             <div class="project-description-title">
               Face Recognition App
@@ -213,10 +216,11 @@
       </div>  
       <div class="project-container"> 
         <div class="project-content project-content-right">
-          <img src="img/landingpages/landing-page-6.jpg" class="project-image"/> 
+          <!-- <img src="img/landingpages/landing-page-6.jpg" class="project-image"/>  -->
+          <div class="project-image"></div>
           <div class="project-description">
             <div class="project-description-title">
-              Content Management System
+              Title
             </div>
             <div class="project-description-definition">
               The landing page is usually the space used by the company
@@ -379,7 +383,7 @@
     </div>
 
     <!-- call to action section -->
-    <div class="call_to_action">
+    <div class="call_to_action" id="call_to_action">
 
       <div class="call_to_action-header">
         <h3 class="cta-header-title">Contact Me</h3>
@@ -433,6 +437,128 @@
   <footer class="footer">
     Copyright &copy; 2020-2022 by George Libatique.
   </footer>
+
+  <div class="popup" id="popup">
+    <div class="resume">
+      <a href="#hero" class="popup__close">&times;</a>
+      <div class="resume-left">
+        <img src="./img/resume-photo.jpg" class="resume-photo" alt="profile"/>
+        <div class="resume-profile" >
+          <div class="resume-profile-name">George Libatique</div>
+          <div class="resume-profile-titles">Front End developer / Electrical Engineer </div>
+          <ul class="resume-profile-description">
+            <li>
+              <div></div>
+              <div>Phone:</div>
+              <div>#0927-033-2819</div> 
+            </li>
+            <li>
+              <div></div>
+              <div>Email:</div>
+              <div>georgelibatique819@gmail.com</div>
+            </li>
+            <li>
+              <div></div>
+              <div>Web:</div>
+              <div>my-portfolio-xemt.onrender.com</div>
+              </li>
+            <li>
+              <div></div>
+              <div>Address:</div>
+              <div>#43 Purok 15, Irisan, Baguio City</div> 
+            </li>
+          </ul>
+        </div>
+      </div>  
+      <div class="resume-middle">
+        <div class="summary">
+            <div class="resume-header">INTRODUCTION</div>
+            <div>
+              A web developer and electrical engineer with in depth foundation on
+            electrical/hardware system design, system integration, problem solving,
+            programming and web development. Excellent interpersonal,
+            leadership and communication abilities, and possess a wide range
+            of technical skills. 
+            </div>
+          </div>
+          <div class="experience">
+            <div class="resume-header">WORK EXPERIENCE</div>
+            <div class="experience-job">
+              <div class="experience-job-position">Freelance Web Developer / Electrical Engineer</div>
+              <div class="experience-job-company">2020-present</div>
+            </div>
+            <div class="experience-job">
+              <div class="experience-job-position">OJT - Electrical/Substation System Designer</div>
+              <div class="experience-job-company">National Grid Corporation of the Philippines/2019</div>
+              <div class="experience-job-role">
+                <div>Responsibilities:</div>  
+                <ul>
+                  <li>Designs additional features of the substation diagram</li>
+                  <li>Updates the single line diagram of the substation</li>
+                  <li>Conducts updates in the existing technical diagrams both design and specifications
+                    under supervision.
+                  </li>
+                  <li>Conducts monthly reports on the substation operation and maintenance</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="seminars">
+            <div class="resume-header">TRAININGS/SEMINARS</div>
+            <ul>
+              <li>Quality Management System/ 2019 SLU Baguio City</li>
+              <li>Power Plant Operations and Maintenance / 2019 SLU Baguio City</li>
+            </ul>  
+          </div>
+      </div>  
+      <div class="resume-right">
+          <div class="education">
+            <div class="resume-header">EDUCATION</div>
+            <div class="education-course">BS in Electrical Engineering</div>
+            <div class="education-school">Saint Louis University/Baguio City, Philippines</div>
+            <div class="education-year">2015-2020</div>
+          </div>
+          <div class="resume-skills">
+            <div class="resume-header">SKILLS</div>
+            <div class="skills-web">
+              <div class="skills-title">Web Development</div>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3/SCSS</li>
+                <li>Javascript</li>
+                <li>React/Vue</li>
+                <li>Responsive Design</li>
+                <li>NodeJs/Express</li>
+                <li>PHP</li>
+                <li>Databases</li>
+              </ul>
+            </div>
+            <div class="skills-non-web"> 
+              <div class="skills-title">Non Web</div>
+              <ul>
+                <li>C/C++ (Fundamentals)</li>
+                <li>MS Office</li>
+                <li>AutoCAD</li>
+                <li>Electrical Engineering</li>
+              </ul>
+            </div>
+          </div>
+          <div class="references">
+            <div class="resume-header">REFERENCES</div>
+            <div class="reference-person">
+              <div class="reference-person-name">Eric Frank Almendral</div>
+              <div>Full Stack Developer</div>
+              <div>#0975-132-1678</div>
+            </div>
+            <div class="reference-person">
+              <div class="reference-person-name">Jake T. Liquigan</div>
+              <div>NGCP/Principal Engineer</div>
+              <div>#0917-841-2750</div>
+            </div>
+          </div>
+      </div>  
+    </div>
+  </div>
   
 </body>
 </html>

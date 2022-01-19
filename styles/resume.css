@@ -1,0 +1,218 @@
+.popup {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(36, 36, 36, 0.836) ;
+  z-index: 9999;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+}
+
+
+
+.resume-header {
+  font-size: 1.8rem;
+  margin: 1.2rem 0;
+  font-weight: bold;
+}
+
+/* CONTAINER */
+.resume {
+  position: absolute;
+  display: grid;
+  width: 130rem;
+  display: flex;
+  height: 90vh;
+  margin: 0 auto ;
+  justify-content: center;
+  margin-top: 3rem;
+  border-radius: 2rem;
+
+  opacity: 0;
+  transform: scale(.25);
+  transition: all .5s .2s;
+}
+
+.resume-left {
+  width: 30rem;
+  color: rgb(173, 173, 173);
+  background-color: #1f2251;
+
+}
+
+.resume-middle {
+  width: 60rem;
+  background-color: white;
+  color: black;
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 3rem;
+}
+
+.resume-right {
+  width: 22rem;
+  background-color: white;
+  color: black;
+  padding-right: 3rem;
+}
+
+/* LEFT SECTION */
+.resume-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.resume-photo {
+  height: 15rem;
+  width: auto;
+  border-radius: 50%;
+  margin: 1rem 7.1rem;
+}
+
+.resume-profile-name {
+  font-size: 2.6rem;
+  text-align: center;
+}
+.resume-profile-titles {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.resume-profile-description li { 
+  list-style: none;
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  padding-left: 5rem;
+}
+
+/* MIDDLE SECTION */
+.summary {
+  font-size: 1.4rem;
+}
+
+.experience {
+  border-top: .2rem solid rgb(88, 88, 88);
+  font-size: 1.4rem;
+}
+
+.experience {
+
+}
+
+.experience-job {
+  /* border: 1px solid rgb(43, 170, 255); */
+  margin-bottom: 1.5rem;
+}
+
+.experience-job-position {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.experience-job-company {
+
+}
+
+.experience-job-role {
+
+}
+
+.experience-job-role li {
+  margin-left: 3rem;
+}
+
+.seminars {
+  /* border: 1px solid rgb(43, 170, 255); */
+  border-top: .2rem solid rgb(88, 88, 88);
+  font-size: 1.4rem;
+}
+
+.seminars li {
+  margin-left: 3rem;
+}
+
+/* RIGHT SECTION */
+.education {
+  /* border: 1px solid rgb(43, 170, 255); */
+  font-size: 1.4rem;
+}
+
+.education-year {
+  margin-bottom: 1.5rem;  
+}
+
+.resume-skills {
+  /* border: 1px solid rgb(43, 170, 255); */
+  border-top: .2rem solid rgb(88, 88, 88);
+  font-size: 1.4rem;
+}
+
+.skills-web {
+
+}
+.skills-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.skills-web li, .skills-non-web li  {
+  margin-left: 3rem;
+  
+}
+.skills-web li:last-child, .skills-non-web li:last-child  {
+  margin-bottom: 1rem;
+}
+
+.skills-non-web {
+
+}
+
+.references {
+  /* border: 1px solid rgb(43, 170, 255); */
+  border-top: .2rem solid rgb(88, 88, 88);
+  font-size: 1.4rem;
+}
+
+.reference-person {
+  margin-bottom: 1.5rem;
+}
+
+.reference-person-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+  transition: all .3s;
+}
+
+.popup:target .resume {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popup__close:link, .popup__close:visited {
+  color: grey;
+  position: absolute;
+  top: .6rem;
+  right: 10.5rem;
+  font-size: 3rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all .2s;
+  line-height: 1;
+}
+
+.popup__close:hover {
+  color: rgb(54, 54, 54);
+}
+

@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -48,7 +49,10 @@ body {
   url("../fonts/Poppins/Poppins-Light.woff2") format('woff2'),
   url("../fonts/Poppins/Poppins-Medium.woff2") format('woff2'),
   url("../fonts/Poppins/Poppins-Regular.woff2") format('woff2'),
-  url("../fonts/Poppins/Poppins-ExtraLight.woff2") format('woff2');
+  url("../fonts/Poppins/Poppins-ExtraLight.woff2") format('woff2'),
+  url("../fonts/Poppins/Poppins-Black.woff2") format('woff2'),
+  url("../fonts/Poppins/Poppins-Bold.woff2") format('woff2'),
+  url("../fonts/Poppins/Poppins-ExtraBold.woff2") format('woff2');
   font-style: normal;
 }
 
