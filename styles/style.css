@@ -62,7 +62,8 @@ body {
   background-size: contain;
   background-color: #171941;
   grid-template-rows: 100vh 150vh 35rem 80vh 70vh 4rem;
-  max-width: 136.6rem;
+  width: 136.6rem;
+  width: 100%;
 }
 
 /* GENERAL BUTTON PROPERTIES */
